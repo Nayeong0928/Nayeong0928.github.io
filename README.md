@@ -1,2 +1,9 @@
-# nayeong0928.github.io
-개발기록
+---
+layout: home
+title: Commit Note
+permalink: /
+---
+
+
+개발 기록 블로그
+
