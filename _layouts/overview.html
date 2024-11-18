@@ -55,10 +55,11 @@
 
                                 {{ content }}
 
-                                {% for post in site.posts %}
+                                {% assign sort_by_date = site.posts | sort: "date" %}
+                                {% for post in sort_by_date %}
                                     {% if post.category == page.category %}
                                     <li>
-                                        <a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
+                                        <a href="{{site.baseurl}}{{post.url}}">{{ post.title }} - {{ post.date }}</a>
                                     </li>
                                     {% endif %}
                                 {% endfor %}
