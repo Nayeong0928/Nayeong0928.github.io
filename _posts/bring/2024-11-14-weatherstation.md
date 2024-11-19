@@ -1,5 +1,5 @@
 ---
-title: WeatherStation 구조 변경
+title: WeatherStation 구조 변경 (1) 컴포넌트 타입
 author: qoskdud0928
 date: 2024-11-14
 category: bring
