@@ -59,6 +59,18 @@
                                         </li>
                                         {% endfor %}
 
+                                        {% for category in site.categories %}
+                                            <h3>{{ category }}</h3>
+                                                {% for post in site.posts %}
+                                                    {% if post.category == category %}
+                                                        <li>
+                                                            <a href="{{site.baseurl}}{{post.url}}">{{ post.title }} | {{ post.category }}</a>
+                                                        </li>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            {% endif %}
+                                        {% endfor%}
+
                                         {%- if jekyll.environment != 'dev' and site.disqushandler -%}
                                         {%- include disqus.html -%}
                                         {%- endif -%}

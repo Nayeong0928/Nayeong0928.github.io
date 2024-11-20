@@ -2,7 +2,7 @@
 title: 인터넷이 안 되는 환경에서 git으로 협업하기
 author: qoskdud0928
 date: 2024-09-21
-category: issue
+category: work
 layout: post
 ---
 
