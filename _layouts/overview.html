@@ -58,9 +58,10 @@
                                 {% assign sort_by_date = site.posts | sort: "date" %}
                                 {% for post in sort_by_date %}
                                     {% if post.category == page.category %}
-                                    <li>
-                                        <a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
-                                    </li>
+                                        <li style="display: flex; justify-content: space-between; align-items: center;">
+                                            <a href="{{ post.url }}" style="flex-grow: 1;">{{ post.title }}</a>
+                                            <span style="white-space: nowrap; color: #ccc;">{{ post.date | date: "%Y-%m-%d" }}</span>
+                                        </li>
                                     {% endif %}
                                 {% endfor %}
 
