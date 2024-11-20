@@ -2,7 +2,7 @@
 title: 인텔리제이 단축키 모음
 author: nayeong0928
 date: 2024-11-20
-category: shortcut
+category: others
 layout: post
 ---
 
